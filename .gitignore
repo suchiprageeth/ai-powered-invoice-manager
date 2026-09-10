@@ -1,0 +1,44 @@
+# ==========================================
+# 1. SHARED / ROOT FILES
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ==========================================
+# 2. BACKEND (Node.js / Express / Postgres)
+# ==========================================
+# Dependencies
+backend/node_modules/
+
+# Secrets and Config (CRITICAL: Database passwords, JWT keys)
+backend/.env
+backend/.env.local
+
+# Logs and debug files
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/pnpm-debug.log*
+
+# Optional: Local SQLite or DB dumps if kept in backend
+backend/*.sql
+backend/*.sqlite
+
+# ==========================================
+# 3. FRONTEND (React / Vite / Next.js)
+# ==========================================
+# Dependencies
+frontend/node_modules/
+
+# Production builds
+frontend/dist/
+frontend/build/
+frontend/out/
+
+# Frontend environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
